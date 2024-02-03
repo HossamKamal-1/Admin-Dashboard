@@ -1,0 +1,7 @@
+@use '../../styles/variables' as *;
+.bar-chart {
+  .title {
+    color: $soft-color;
+    margin-bottom: 5px;
+  }
+}

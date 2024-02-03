@@ -1,0 +1,40 @@
+@use '../../styles/mixins' as *;
+.pie-chart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .title {
+    @include xs {
+      font-size: 20px;
+      text-align: center;
+    }
+    @include sm {
+      font-size: 2em;
+      text-align: start;
+    }
+  }
+  &-stat {
+    @include flex(between);
+    @include xs {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: row;
+    }
+    gap: 10px;
+    .stat-box {
+      &-title {
+        @include flex;
+        gap: 5px;
+      }
+      &-number {
+        margin-top: 5px;
+        text-align: center;
+      }
+    }
+    .cell-color {
+      @include roundedCircle(12);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+%section-padding {
+  padding: 5px 20px;
+}
+.main {
+  background-color: $main-bg;
+  color: $main-color;
+  min-height: 100vh;
+  &-wrapper {
+    display: flex;
+  }
+}
+.sidebar-wrapper {
+  border-right: 2px solid $soft-bg;
+  @include lg {
+    width: 250px;
+  }
+}
+.content-wrapper {
+  padding: 0px 20px;
+  flex: 1;
+  overflow: hidden;
+}

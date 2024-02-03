@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+.home {
+  display: grid;
+  grid-auto-flow: dense;
+  gap: 20px;
+  @include xs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include xxl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  grid-auto-rows: minmax(180px, auto);
+  .box {
+    @include xs {
+      padding: 10px;
+    }
+    @include sm {
+      padding: 20px;
+    }
+    border-radius: 10px;
+    border: 2px solid $soft-bg;
+
+    &-1 {
+      grid-column: span 1;
+      grid-row: span 3;
+    }
+    &-4 {
+      grid-row: span 3;
+    }
+    &-7 {
+      grid-row: span 2;
+      @include xs {
+        grid-column: span 1;
+      }
+      @include lg {
+        grid-column: span 2;
+      }
+      @include xl {
+        grid-column: span 3;
+      }
+      @include xxl {
+        grid-column: span 2;
+      }
+    }
+  }
+}

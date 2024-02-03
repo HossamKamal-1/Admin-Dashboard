@@ -1,0 +1,23 @@
+@use '../../styles/mixins' as *;
+.error-container {
+  height: calc(100vh - 72px - 58.4px);
+  @include flex(center);
+  text-align: center;
+  .error-title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .error {
+    color: indianred;
+    font-weight: bold;
+    font-size: 30px;
+    span {
+      display: block;
+      font-size: 35px;
+    }
+    margin-bottom: 20px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}

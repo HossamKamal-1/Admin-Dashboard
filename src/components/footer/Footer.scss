@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+footer {
+  position: sticky;
+  background-color: $main-bg;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  height: 58.4px;
+}

@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+.top-box {
+  .title {
+    color: $main-color;
+    margin-bottom: 10px;
+    @include xs {
+      font-size: 20px;
+      text-align: center;
+    }
+    @include sm {
+      font-size: 2em;
+      text-align: start;
+    }
+  }
+  .top-list {
+    padding-left: 10px;
+    li {
+      @include flex(between);
+      @include xs {
+        flex-direction: column;
+      }
+      @include sm {
+        flex-direction: row;
+      }
+      gap: 5px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    .item {
+      @include flex;
+      @include xs {
+        flex-direction: column;
+        text-align: center;
+      }
+      @include sm {
+        flex-direction: row;
+        text-align: start;
+      }
+      gap: 8px;
+    }
+    .name {
+      margin-bottom: 2px;
+      font-size: 14px;
+    }
+    .email {
+      font-size: 12px;
+    }
+    img {
+      @include roundedCircle(32);
+    }
+    .amount {
+      font-weight: bold;
+    }
+  }
+}

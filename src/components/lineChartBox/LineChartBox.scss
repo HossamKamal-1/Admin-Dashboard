@@ -1,0 +1,31 @@
+@use '../../styles/variables' as *;
+.chart-box {
+  display: flex;
+  height: 100%;
+  .info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .chart-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .chart {
+      height: 100%;
+    }
+    .text {
+      text-align: right;
+    }
+    .percentage {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .duration {
+      color: $soft-color;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+.sidebar {
+  position: sticky;
+  top: 72px;
+  overflow-y: hidden;
+  padding: 5px 20px;
+  @include xs {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  height: calc(100vh - 72px - 58.4px);
+  scrollbar-gutter: stable both-edges;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $soft-bg;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &:hover {
+    overflow-y: auto;
+  }
+  &-item {
+    margin-bottom: 15px;
+
+    &-title {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 12px;
+      color: $soft-color;
+      @include xs {
+        display: none;
+      }
+      @include md {
+        display: block
+      }
+    }
+    &-links {
+      .link {
+        @include flex;
+        @include xs {
+          justify-content: center;
+        }
+        @include md {
+          justify-content: flex-start;
+        }
+        gap: 8px;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        span {
+          @include xs {
+            display: none;
+          }
+          @include md {
+            display: block;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        &:hover,
+        &.active {
+          background-color: $soft-bg;
+        }
+      }
+    }
+  }
+}

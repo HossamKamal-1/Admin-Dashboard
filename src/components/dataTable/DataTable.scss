@@ -1,0 +1,10 @@
+@use '../../styles/mixins' as *;
+.data-grid {
+  img {
+    @include roundedCircle(32);
+  }
+  .actions {
+    display: flex;
+    gap: 5px;
+  }
+}

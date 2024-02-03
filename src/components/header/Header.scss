@@ -1,0 +1,49 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+header {
+  @include flex(between);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: $main-bg;
+  padding: 20px;
+  .home-link {
+    @include flex;
+    gap: 8px;
+    font-weight: bold;
+  }
+  .icons {
+    @include flex;
+    gap: 15px;
+    .icon {
+      @include xs {
+        display: none;
+      }
+      @include md {
+        display: block;
+      }
+    }
+  }
+  .notification {
+    position: relative;
+    span {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      @include roundedCircle(18);
+      object-fit: none;
+      @include flex(center);
+      background-color: red;
+      font-size: 12px;
+    }
+  }
+  .user {
+    @include flex;
+    gap: 10px;
+    img {
+      @include roundedCircle(26);
+    }
+  }
+}
+
+
