@@ -81,14 +81,18 @@ yarn build
 
 `Home Page:`
 
-![admindashboard screenshot1](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/e6ad49f2-93f0-43fa-91e9-b6621aa45c29)
+![admindashboard screenshot1](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/6accf5a7-dbf2-47fa-9dfd-81fece7e29ed)
+
 
 `Profile Page:`
 
-![admindashboard screenshot2](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/e32352d9-6a2f-44d0-a407-54423e1f0e4e)
+![admindashboard screenshot2](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/d8ea16f0-7d24-4de8-b07e-4f9068996fce)
+
+
 `Users Page:`
 
-![admindashboard screenshot3](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/184a603f-1e98-4095-b82f-d838acbe5093)
+![admindashboard screenshot3](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/13be36d1-7916-4359-9332-6fbe22413993)
+
 
 ## Demo
 
@@ -98,7 +102,8 @@ https://651ee8e2ae1bac00a1eb7442--willowy-hotteok-e2facf.netlify.app/
 
 gif:
 
-![ezgif-3-c9a1db8f3b](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/62ec24ee-3d73-4aff-b2df-c23a520caa03)
+![ezgif-3-c9a1db8f3b](https://github.com/HossamKamal-1/Admin-Dashboard/assets/99696657/72a6c0d9-6947-4a39-a4b5-38d6090d41f2)
+
 
 
 
