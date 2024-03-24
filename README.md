@@ -104,7 +104,7 @@ yarn build
 
 Netlify Demo:
 
-https://651ee8e2ae1bac00a1eb7442--willowy-hotteok-e2facf.netlify.app/
+https://spot-admin.netlify.app/
 
 gif:
 
